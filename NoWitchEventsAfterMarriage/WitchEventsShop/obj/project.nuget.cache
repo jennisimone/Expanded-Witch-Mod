@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "tuPTe3lveGdx9u2JCw/qRHhbd7fyRTm/BbYwYTFSCfOUCuHrtKcVUY+ctAQ0h2nPxWQJ0uX0MJMyk9mT3SgE1Q==",
+  "success": true,
+  "projectFilePath": "/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/WitchEventsShop.csproj",
+  "expectedPackageFiles": [
+    "/Users/jenniferfoster/.nuget/packages/lib.harmony/2.3.0-alpha.5/lib.harmony.2.3.0-alpha.5.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/mono.cecil/0.11.4/mono.cecil.0.11.4.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/monomodreorg.backports/23.3.22.1/monomodreorg.backports.23.3.22.1.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/monomodreorg.core/23.3.22.1/monomodreorg.core.23.3.22.1.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/monomodreorg.ilhelpers/23.3.22.1/monomodreorg.ilhelpers.23.3.22.1.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/monomodreorg.utils/23.3.22.1/monomodreorg.utils.23.3.22.1.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/pathoschild.stardew.modbuildconfig/4.1.0/pathoschild.stardew.modbuildconfig.4.1.0.nupkg.sha512",
+    "/Users/jenniferfoster/.nuget/packages/system.text.json/5.0.2/system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

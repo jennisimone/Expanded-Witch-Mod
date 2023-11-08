@@ -1,0 +1,10 @@
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/bin/Debug/net5.0/WitchEventsShop.deps.json
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/bin/Debug/net5.0/WitchEventsShop.dll
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/bin/Debug/net5.0/WitchEventsShop.pdb
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.csproj.AssemblyReference.cache
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.AssemblyInfoInputs.cache
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.AssemblyInfo.cs
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.csproj.CoreCompileInputs.cache
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.dll
+/Users/jenniferfoster/Documents/StardewModding/NoWitchEventsAfterMarriage/WitchEventsShop/obj/Debug/net5.0/WitchEventsShop.pdb
