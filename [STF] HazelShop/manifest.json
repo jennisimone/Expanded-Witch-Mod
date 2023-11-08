@@ -1,0 +1,14 @@
+{
+    "Name": "Expanded Witch Shop",
+    "Author": "jennisimone",
+    "Version": "1.1.1",
+    "Description": "This mod expands upon the witch. It expands upon her backstory, and makes her a marraige canditate.",
+    "UniqueID": "jennisimone.ExpandedWitchSTF",
+    "UpdateKeys": [
+        "Nexus:16304"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Cherry.ShopTileFramework"
+    },
+    "Dependencies": []
+}

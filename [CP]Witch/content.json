@@ -1,0 +1,174 @@
+{
+  "Format": "1.21.0",
+  "DynamicTokens": [
+    {
+      "Name": "Cured",
+      "Value": ""
+    },
+    {
+      "Name": "Cured",
+      "Value": "-cured",
+      "When": {
+        "HasSeenEvent": "16304004"
+      }
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/Disposition.json"
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Witch": "Wow I need this for a spell I'm working on! Thank you!/225 74 876 896 155 268/This could come in useful, thank you./-2 -28/What exactly do you expect me to do with this?/-6 -5 -27/Are you trying to curse me?? Why would you give me this?/-80 -20/Thanks./-75 -79 -4"
+      }
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Witch",
+      "FromFile": "assets/img/spritesheet{{Cured}}.png"
+    },
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Witch",
+      "FromFile": "assets/img/portrait{{Cured}}.png"
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Witch",
+      "FromFile": "assets/schedules/Witch.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Witch",
+      "FromFile": "assets/dialogue/Witch.json"
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "Rainy_Day_Witch": "Rain? I'm glad I brought the portal with me when I moved in.",
+        "Rainy_Night_Witch": "Can you hear the rain spirits? They're screaming so much tonight.",
+        "Indoor_Day_Witch": "Junimo dust, void essence, fairy rose, garlic oil... Yes I think I have all the ingredients I need for now.",
+        "Indoor_Night_Witch": "How was your day dear? I missed you.",
+        "jobLeave_Witch": "I'm opening the shop today, you should come visit if you get the chance.",
+        "jobReturn_Witch": "It was such a long day today. 5 different Goblins came in demanding essence of wormtail.",
+        "spring_Witch": "Now the festive season is over, I should really start stocking up my supplies.",
+        "summer_Witch": "I hate this, the heat really messes up the arcane properties of my newts eye.",
+        "fall_Witch": "It's finally fall!$h#$b#I can't wait for all hallows eve so I can go out without being judged.",
+        "winter_Witch": "It's so cold outside. $u#$b#I'll have to get a fire going in the hut.",
+        "spouseRoom_Witch": "I'm just brewing some potions before I start the day. I have some new orders I need to work on."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpouseRooms",
+      "Entries": {
+        "Witch": "jennisimone_ExpandedWitch_SpouseRooms/0"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/jennisimone_ExpandedWitch_SpouseRooms",
+      "FromFile": "assets/tilemaps/spouseRooms.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpousePatios",
+      "Entries": {
+        "Witch": "jennisimone_ExpandedWitch_SpousePatios/0"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/jennisimone_ExpandedWitch_SpousePatios",
+      "FromFile": "assets/tilemaps/spousePatios.tmx"
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueWitch",
+      "FromFile": "assets/dialogue/MarriageDialogueWitch.json"
+    },
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Witch0": "I am so happy!$1",
+        "Witch1": "I'm so nervous for tomorrow.$4"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Witch_8": "@,^Thank you for being such a good friend to me!^I have an important favour to ask of you, could you bring me a prismatic shard?^I'll tell you more when you bring it.  ^   -Hazel [#]I need your help!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Witch_6": "@, ^Since I have my curses under control, I've decided to use the extra time to open a shop, check the magic book in my hut for what I'm selling. ^    -Hazel"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/ObjectInformation",
+      "Entries": {
+        "16304801": "Black Slime Egg/6000/-300/Basic/Black Slime Egg/Can be hatched in a slime incubator."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "16304005/f Witch 2000/x Witch_8": "null"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/WitchHut",
+      "FromFile": "assets/Events/WitchHut.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "16304008/f Witch 2500/t 1200 2300": "spirits_eve/12 38/farmer 12 29 2 Witch 12 39 2/skippable/move farmer 0 7 2/faceDirection Witch 0/pause 400/move farmer 0 2 2/speak Witch \"Hey! You came!\"/pause 500/faceDirection Witch 2/pause 200/move farmer 1 0 2/move farmer 0 1 3/pause 500/faceDirection farmer 2/pause 1000/playMusic echos/pause 1000/speak Witch \"Thank you for coming! I really appreciate it.#$b#I actually wanted to talk to you about something.\"/pause 2000/speak Witch \"Since we met I've felt my curse lifting and lifting and now it's gone..#$b#...#$b#Well, I realise what I was really feeling.#$b#I was falling in love with you.\"/pause 1000/speak Witch \"$q 16304902 null#Do you feel the same way?$s#$r 16304902 50 witch_question3#Yes! I feel exactly the same way!#$r 16304902 -500 witch_question4#No.. I'm sorry.\"/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "16304009/f Witch 3500/O Witch": "spirits_eve/5 28/farmer 5 38 0 Witch 5 28 0/skippable/move farmer 0 -9 0/emote Witch 19/pause 400/faceDirection Witch 2/speak Witch \"@! You're here!#$b#I suppose you're wondering why I'm here?#$b#Well, I figured it was time to speak to Rasmodius.#$b#I feel so much better since we married, but I think closure is important and we both have things to apologise for.\"/faceDirection Witch 0/pause 800/faceDirection Witch 2/speak Witch \"Will you come with me?\"/move Witch 0 -1 0/warp Witch -100 -100/move farmer 0 -2 0/end position 5 27"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/WizardHouse",
+      "Entries": {
+        "16304010/O Witch/e 16304009": "spirits_eve/2 14/farmer 8 24 0 Witch 8 22 0 Wizard 3 17 2/skippable/emote Wizard 19/speak Wizard \"Hazel?? What are you doing here?\"/move Witch 0 -5 0/move Witch -4 0 3/move farmer 0 -6 0/move farmer -2 0 3/speak Witch \"Rasmodius, I wanted to speak to you about our relationship.#$b#I'm sorry for how it ended, I shouldn't have tried to curse you.\"/speak Wizard \"No you shouldn't have.\"/speak Witch \"Aren't you going to apologise for your part?\"/emote Wizard 12/speak Wizard \"What do I need to apologise for? You were out all the time, saying you were working, but who knows if that's true.\"/speak Witch \"It was true! I was working on my spells, that's how I ended up cursed, it wasn't ready yet.#$b#I was trying to make a better life for us. I just wanted to make sure we had enough money to see us through the next 100 years of our lives.\"/speak Wizard \"Oh I guess I didn't realise. I'm sorry. I thought you were cheating on me.\"/emote Witch 12/speak Witch \"How could you ever think that?$a#$b#I don't know why I felt the need to come here.$s#$b#I'm happy now. I'm married, @ makes me happy and I've never been happier.$a#$b#I have to leave. I love you @.\"/move Witch 4 0 1/move Witch 0 5 0/end dialogue Witch \"Thanks for coming with me @. Seeing him made me realise I don't need that closure.#$b# He'll never understand.#$b# And that's ok because I'm happy with you.\""
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/WitchHut",
+      "FromFile": "assets/tilemaps/WitchHut.tmx",
+      "When": {
+        "HasSeenEvent": "16304003"
+      }
+  }
+  ]
+}

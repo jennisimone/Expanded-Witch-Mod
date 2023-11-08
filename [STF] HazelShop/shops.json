@@ -1,0 +1,40 @@
+{
+    "Shops": [
+      {
+        "ShopName": "HazelsWitchShop",
+        "StoreCurrency": "Money",
+        "PortraitPath": "portrait.png",
+        "Quote": "Find all your magical goods here!",
+        "When": [
+            "e 16304003"
+        ],
+        "ItemStocks": [
+          {
+            "ItemType": "Object",
+            "StockPrice": 1000,
+            "ItemIds": [305],
+            "Stock": 3
+          },
+          {
+            "ItemType": "Object",
+            "StockPrice": 2000,
+            "ItemIds": ["773"],
+            "Stock": 5
+          },
+          {
+            "ItemType": "Object",
+            "StockPrice": 3000,
+            "ItemIds": ["772"],
+            "Stock": 5
+          },
+          {
+            "ItemType": "Object",
+            "StockPrice": 5000,
+            "ItemIds": ["879"],
+            "Stock": 5
+          }
+        ]
+      }
+    ]
+  }
+  

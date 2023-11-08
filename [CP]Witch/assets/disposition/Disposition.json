@@ -1,0 +1,11 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "data/NPCDispositions",
+      "Entries": {
+        "Witch": "adult/rude/neutral/neutral/female/datable/null/Other/fall 28//WitchHut 4 6/Hazel"
+      }
+    }
+  ]
+}
