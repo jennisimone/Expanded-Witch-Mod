@@ -1,0 +1,208 @@
+{
+  "Format": "2.0.0",
+  "DynamicTokens": [
+    {
+      "Name": "Cured",
+      "Value": ""
+    },
+    {
+      "Name": "Cured",
+      "Value": "-cured",
+      "When": {
+        "HasSeenEvent": "16304004"
+      }
+    }
+  ],
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Characters/Hazel",
+      "FromFile": "assets/img/spritesheet{{Cured}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Hazel",
+      "FromFile": "assets/img/portrait{{Cured}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/jennisimone_ExpandedWitch_SpouseRooms",
+      "FromFile": "assets/tilemaps/spouseRooms.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/jennisimone_ExpandedWitch_SpousePatios",
+      "FromFile": "assets/tilemaps/spousePatios.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Hazel": {
+          "TextureName": "Hazel",
+          "DisplayName": "Hazel",
+          "BirthSeason": "Fall",
+          "BirthDay": 28,
+          "HomeRegion": "Other",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Rude",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "IsDarkSkinned": true,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "CanBeRomanced": true,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "Home": [
+            {
+              "Id": "HazelDefaultHome",
+              "Location": "Saloon",
+              "Tile": {
+                "X": 31,
+                "Y": 7
+              },
+              "Direction": "right"
+            }
+          ],
+          "Appearance": [
+            {
+              "Portrait": "Portraits/Hazel",
+              "Sprite": "Characters/Hazel"
+            }
+          ],
+          "SpouseRoom": {
+            "MapAsset": "jennisimone_ExpandedWitch_SpouseRooms"
+          },
+          "SpousePatio": {
+            "MapAsset": "jennisimone_ExpandedWitch_SpousePatios"
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Blank JSON load",
+      "Action": "Load",
+      "Target": "Characters/schedules/Hazel, Characters/Dialogue/Hazel, Characters/Dialogue/MarriageDialogueHazel, Data/Events/WitchHut",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "Hazel schedule",
+      "Action": "Include",
+      "FromFile": "assets/schedules/Hazel.json"
+    },
+    {
+      "LogName": "Dialogue load",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/Hazel.json"
+    },
+    {
+      "LogName": "Marriage Dialogue load",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/MarriageDialogueHazel.json"
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Hazel": "Wow I need this for a spell I'm working on! Thank you!/225 74 876 896 155 268/This could come in useful, thank you./-2 -28/What exactly do you expect me to do with this?/-6 -5 -27/Are you trying to curse me?? Why would you give me this?/-80 -20/Thanks./-75 -79 -4"
+      }
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "Rainy_Day_Hazel": "Rain? I'm glad I brought the portal with me when I moved in.",
+        "Rainy_Night_Hazel": "Can you hear the rain spirits? They're screaming so much tonight.",
+        "Indoor_Day_Hazel": "Junimo dust, void essence, fairy rose, garlic oil... Yes I think I have all the ingredients I need for now.",
+        "Indoor_Night_Hazel": "How was your day dear? I missed you.",
+        "jobLeave_Hazel": "I'm opening the shop today, you should come visit if you get the chance.",
+        "jobReturn_Hazel": "It was such a long day today. 5 different Goblins came in demanding essence of wormtail.",
+        "spring_Hazel": "Now the festive season is over, I should really start stocking up my supplies.",
+        "summer_Hazel": "I hate this, the heat really messes up the arcane properties of my newts eye.",
+        "fall_Hazel": "It's finally fall!$h#$b#I can't wait for all hallows eve so I can go out without being judged.",
+        "winter_Hazel": "It's so cold outside. $u#$b#I'll have to get a fire going in the hut.",
+        "spouseRoom_Hazel": "I'm just brewing some potions before I start the day. I have some new orders I need to work on."
+      }
+    },
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Hazel0": "I am so happy!$1",
+        "Hazel1": "I'm so nervous for tomorrow.$4"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Hazel_8": "@,^Thank you for being such a good friend to me!^I have an important favour to ask of you, could you bring me a prismatic shard?^I'll tell you more when you bring it.  ^   -Hazel [#]I need your help!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Hazel_6": "@, ^Since I have my curses under control, I've decided to use the extra time to open a shop, check the magic book in my hut for what I'm selling. ^    -Hazel"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/ObjectInformation",
+      "Entries": {
+        "16304801": "Black Slime Egg/6000/-300/Basic/Black Slime Egg/Can be hatched in a slime incubator."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "16304005/f Hazel 2000/x Hazel_8": "null"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "16304008/f Hazel 2500/t 1200 2300": "spirits_eve/12 38/farmer 12 29 2 Hazel 12 39 2/skippable/move farmer 0 7 2/faceDirection Hazel 0/pause 400/move farmer 0 2 2/speak Hazel \"Hey! You came!\"/pause 500/faceDirection Hazel 2/pause 200/move farmer 1 0 2/move farmer 0 1 3/pause 500/faceDirection farmer 2/pause 1000/playMusic echos/pause 1000/speak Hazel \"Thank you for coming! I really appreciate it.#$b#I actually wanted to talk to you about something.\"/pause 2000/speak Hazel \"Since we met I've felt my curse lifting and lifting and now it's gone..#$b#...#$b#Well, I realise what I was really feeling.#$b#I was falling in love with you.\"/pause 1000/speak Hazel \"$q 16304902 null#Do you feel the same way?$s#$r 16304902 50 hazel_question3#Yes! I feel exactly the same way!#$r 16304902 -500 hazel_question4#No.. I'm sorry.\"/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/WitchHut",
+      "Entries": {
+        "16304001/f Hazel 500": "spirits_eve/7 9/Hazel 4 5 2 farmer 7 15 0/move Hazel 0 5 2/speak Hazel \"Oh hello @.\"/move farmer 0 -5 0/move farmer -2 0 3/speak Hazel \"Listen, I'm sorry I've been so rude to you.#$b#It's just been so hard since my breakup with Rasmodius. This curse just makes me so angry and out of control all the time.\"/speak Hazel \"$q 16304901 null#Can you forgive me?$s#$r 16304901 50 hazel_question1#Of course! I understand.#$r 16304901 -250 hazel_question2#Absolutely not, you're a horrible person and you don't deserve my forgiveness.\"/end",
+        "16304002/f Hazel 1000": "spirits_eve/7 9/Hazel 4 5 2 farmer 7 15 0/move Hazel 0 5 2/speak Hazel \"@, you're here! Listen I think it's about time I tell you about my curse.\"/move farmer 0 -5 0/move farmer -2 0 3/speak Hazel \"So as you know, when Rasmodius & I broke up I was cursed. But there's more to it than that.#$b#You see at the time, I was working on some new spells. They were incredibly dangerous spells, so I'd been trying to finalise them.#$b#I guess I was focusing too hard on them because Rasmodius was feeling neglected. #$b#So When I returned home one evening, he told me he'd had enough.#$b#Without thinking, I uttered one of my new spells in anger, but it wasn't ready yet and it backfired.#$b#So I turned green & I'm filled with this rage that I can't do anything about.#$b#Sometimes it gets completely out of control and I guess that's when I must curse your barns. I'm sorry.\"/end dialogue Hazel \"Maybe one day they'll be a cure.\"",
+        "16304003/f Hazel 1500": "spirits_eve/7 9/Hazel 4 5 2 farmer 7 15 0/move Hazel 0 5 2/speak Hazel \"Great news @!\"/move farmer 0 -5 0/move farmer -2 0 3/speak Hazel \"I recently revisited my old spell book, I've been learning more and more about my curse and what caused it. #$b#I haven't quite figured out how to get better, but I don't think I'll lose control anymore.#$b#Hopefully you won't be visited anymore in the night on my rampages.\"/mail Hazel_6/end dialogue Hazel \"I guess this means I won't be making any more midnight visits? Well unless you want me to.\"",
+        "16304004/e 16304005/f Hazel 2000/i 74": "spirits_eve/7 9/Hazel 4 5 2 farmer 7 15 0/move Hazel 0 5 2/speak Hazel \"@, you came. Oh good, you brought the shard.\"/move farmer 0 -5 0/move farmer -2 0 3/removeItem 74/speak Hazel \"Thank you, I guess I should tell you why I need this.#$b#I've been studying more and I found a way to cure my curse.#$b#Let me show you, follow me.\"/move farmer 0 1 2/move Hazel 0 -1 1/move Hazel 7 0 1/move farmer 0 -1 1/move farmer 7 0 0/playSound dwop/pause 300/speak Hazel \"Ok I think it's working! I'm not sure how long this will take, but come back and see me tomorrow!\"/end dialogue Hazel \"I hope this works! I just want to be me again..\""
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "16304009/f Hazel 3500/O Hazel": "spirits_eve/5 28/farmer 5 38 0 Hazel 5 28 0/skippable/move farmer 0 -9 0/emote Hazel 19/pause 400/faceDirection Hazel 2/speak Hazel \"@! You're here!#$b#I suppose you're wondering why I'm here?#$b#Well, I figured it was time to speak to Rasmodius.#$b#I feel so much better since we married, but I think closure is important and we both have things to apologise for.\"/faceDirection Hazel 0/pause 800/faceDirection Hazel 2/speak Hazel \"Will you come with me?\"/move Hazel 0 -1 0/warp Hazel -100 -100/move farmer 0 -2 0/end position 5 27"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/WizardHouse",
+      "Entries": {
+        "16304010/O Hazel/e 16304009": "spirits_eve/2 14/farmer 8 24 0 Hazel 8 22 0 Wizard 3 17 2/skippable/emote Wizard 19/speak Wizard \"Hazel?? What are you doing here?\"/move Hazel 0 -5 0/move Hazel -4 0 3/move farmer 0 -6 0/move farmer -2 0 3/speak Hazel \"Rasmodius, I wanted to speak to you about our relationship.#$b#I'm sorry for how it ended, I shouldn't have tried to curse you.\"/speak Wizard \"No you shouldn't have.\"/speak Hazel \"Aren't you going to apologise for your part?\"/emote Wizard 12/speak Wizard \"What do I need to apologise for? You were out all the time, saying you were working, but who knows if that's true.\"/speak Hazel \"It was true! I was working on my spells, that's how I ended up cursed, it wasn't ready yet.#$b#I was trying to make a better life for us. I just wanted to make sure we had enough money to see us through the next 100 years of our lives.\"/speak Wizard \"Oh I guess I didn't realise. I'm sorry. I thought you were cheating on me.\"/emote Hazel 12/speak Hazel \"How could you ever think that?$a#$b#I don't know why I felt the need to come here.$s#$b#I'm happy now. I'm married, @ makes me happy and I've never been happier.$a#$b#I have to leave. I love you @.\"/move Hazel 4 0 1/move Hazel 0 5 0/end dialogue Hazel \"Thanks for coming with me @. Seeing him made me realise I don't need that closure.#$b# He'll never understand.#$b# And that's ok because I'm happy with you.\""
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/WitchHut",
+      "FromFile": "assets/tilemaps/WitchHut.tmx",
+      "When": {
+        "HasSeenEvent": "16304003"
+      }
+    }
+  ]
+}

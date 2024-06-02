@@ -1,0 +1,12 @@
+{
+  "Changes": [
+    {
+      "LogName": "Schedule - hazel daily pre marriage",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Hazel",
+      "Entries": {
+        "spring": "710 31 7 1/1400 35 8 1"
+      }
+    }
+  ]
+}
